@@ -3,7 +3,7 @@
        stages {
            stage('Clone') {
                steps {
-                   git 'https://github.com/inhklame3/Dien-toan-dam-may.git'
+                  git branch: 'main', url: 'https://github.com/inhklame3/Dien-toan-dam-may.git'
                }
            }
            stage('Build Docker Image') {
