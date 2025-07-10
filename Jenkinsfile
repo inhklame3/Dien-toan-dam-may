@@ -1,11 +1,6 @@
    pipeline {
        agent any
        stages {
-           stage('Clone') {
-               steps {
-                  git branch: 'main', url: 'https://github.com/inhklame3/Dien-toan-dam-may.git'
-               }
-           }
            stage('Build Docker Image') {
                steps {
                    script {
